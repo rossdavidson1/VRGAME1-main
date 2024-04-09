@@ -7,6 +7,7 @@ Library: C:\temp\VRGAME1-main\Temp\BurstOutput\tempburstlibs\arm64-v8a\lib_burst
 --dump=Function
 --float-precision=Standard
 --target-framework=NetFramework
+--assembly-defines=Assembly-CSharp;
 --assembly-defines=Mono.Security;
 --assembly-defines=mscorlib;
 --assembly-defines=System.Configuration;
@@ -23,6 +24,7 @@ Library: C:\temp\VRGAME1-main\Temp\BurstOutput\tempburstlibs\arm64-v8a\lib_burst
 --assembly-defines=Unity.RenderPipelines.Core.Runtime;
 --assembly-defines=Unity.RenderPipelines.HighDefinition.Config.Runtime;
 --assembly-defines=Unity.RenderPipelines.HighDefinition.Runtime;
+--assembly-defines=Unity.TextMeshPro;
 --assembly-defines=Unity.Timeline;
 --assembly-defines=Unity.VisualEffectGraph.Runtime;
 --assembly-defines=Unity.XR.CoreUtils;
