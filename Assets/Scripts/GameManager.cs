@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
@@ -29,6 +30,12 @@ public class GameManager : MonoBehaviour
     {
         score += points;
         UpdateScoreUI();
+
+        if (score >= 6)
+        {
+            // Load the WinScene
+            SceneManager.LoadScene("YouWin");
+        }
     }
 
     //Method to update the score displayed in the UI
