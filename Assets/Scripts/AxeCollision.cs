@@ -5,6 +5,8 @@ using UnityEngine;
 public class AxeCollision : MonoBehaviour
 {
     public int pointsPerHit = 1; // Points to gain per hit
+    public AudioSource myAudioSource;
+    public AudioClip myAudioClip;
 
     // OnTriggerEnter is called when the Collider other enters the trigger
     void OnTriggerEnter(Collider other)
@@ -16,6 +18,7 @@ public class AxeCollision : MonoBehaviour
             Debug.Log("Target Hit");
 
             // Optionally, you can add sound or visual feedback here
+            myAudioSource.PlayOneShot(myAudioClip);
 
             // Destroy the axe
             Destroy(gameObject);
